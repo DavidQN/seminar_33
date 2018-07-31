@@ -25,7 +25,7 @@ $ cd herokuFlask
 Now let us create our Flask application and call our application `application.py`
 
 ```
-touch application.py
+$ touch application.py
 ```
 
 Within `application.py` let us return 'Hello World!'.
@@ -45,13 +45,13 @@ def hello():
 Now let us export our Flask application
 
 ```shell
-export FLASK_APP=application.py
+$ export FLASK_APP=application.py
 ```
 
 And now run this application locally
 
 ```shell
-flask run
+$ flask run
 ```
 
 Great we should get
@@ -69,13 +69,13 @@ OKAY! Now let us actually deploy this Flask application to heroku.
 Let us install `Gunicorn`
 
 ```
-pip install gunicorn
+$ pip install gunicorn
 ```
 
 Let us create our Procfile
 
 ```
-touch Procfile
+$ touch Procfile
 ```
 
 Within the Procfile
@@ -87,13 +87,13 @@ web gunicorn application:app
 Now let us create our Heroku application (this should generate a heroku app for us)
 
 ```
-heroku create
+$ heroku create
 ```
 
 Now let us open the heroku application
 
 ```
-heroku open
+$ heroku open
 ```
 
 We should just get a generic page that looks similar to this
@@ -102,27 +102,27 @@ We should just get a generic page that looks similar to this
 Place our pip installs to a `requirements.txt` file
 
 ```
-pip freeze > requirements.txt
+$ pip freeze > requirements.txt
 ```
 
 Put everything to our local repository
 
 ```
-git init
-git add .
-git commit -m "Deploy to heroku"
+$ git init
+$ git add .
+$ git commit -m "Deploy to heroku"
 ```
 
 Now let us push our code to the Heroku applications remote git repo
 
 ```
-git push heroku master
+$ git push heroku master
 ```
 
 Now if you want to see your application, when you run `heroku open` you should be able to see your application now
 
 ```
-heroku open
+$ heroku open
 ```
 
 ---
