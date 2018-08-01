@@ -4,9 +4,9 @@ Steps to deploy your first Flask application on Heroku.
 
 ## What you need beforehand
 
--   Git
--   Heroku Account
--   Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli)
+- Git
+- Heroku Account
+- Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli)
 
 ### Deploying a local Flask application
 
@@ -20,6 +20,12 @@ After we have created our folder let us enter that folder
 
 ```shell
 $ cd herokuFlask
+```
+
+Let us initialize our repository
+
+```
+$ git init
 ```
 
 Now let us create our Flask application and call our application `application.py`
@@ -105,10 +111,9 @@ Place our pip installs to a `requirements.txt` file
 $ pip freeze > requirements.txt
 ```
 
-Put everything to our local repository
+Store everything to our local repository
 
 ```
-$ git init
 $ git add .
 $ git commit -m "Deploy to heroku"
 ```
