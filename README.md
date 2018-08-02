@@ -102,6 +102,8 @@ Now let us open the heroku application
 $ heroku open
 ```
 
+##### IMPORTANT: If you are using CS50 IDE this may not work, but you are also given a URL for the Heroku site to which you can copy and paste
+
 We should just get a generic page that looks similar to this
 <img width="538" alt="screen shot 2018-07-31 at 1 48 12 am" src="https://user-images.githubusercontent.com/23644019/43440060-dc4a8076-9463-11e8-8784-d44a0d92e53c.png">
 
